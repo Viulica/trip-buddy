@@ -151,7 +151,6 @@ const handleReset = () => {
         <div className="success-container">
           <div className="success-header">
             <h2>Trip Created!</h2>
-            <div className="success-badge">Success</div>
           </div>
           
           <div className="trip-summary">
@@ -175,7 +174,6 @@ const handleReset = () => {
           <div className="qr-container">
             <h3>Share this trip</h3>
             <TripQRCode tripId={tripDetails.id} />
-            <p className="qr-instructions">Scan to view trip details</p>
           </div>
           
           <div className="success-actions">

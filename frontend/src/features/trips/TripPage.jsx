@@ -81,6 +81,7 @@ const TripPage = () => {
                         
                         <div className="meta-item qr-meta">
                             <div>
+                                <h3>Share Trip</h3>
                                 <div className="trip-qr-container">
                                     <TripQRCode tripId={tripId} />
                                 </div>
