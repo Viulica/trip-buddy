@@ -2,14 +2,16 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { GoogleMap, Marker, useLoadScript } from '@react-google-maps/api';
 import TripForm from './TripForm';
-import { GOOGLE_MAPS_API_KEY } from '../../services/googleMaps';
 import '../../styles/NewTrip.css';
+
+const GOOGLE_MAPS_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
 const NewTrip = () => {
     const [tripDetails, setTripDetails] = useState({
         location: '',
         activity: '',
-        isCreated: false
+        isCreated: false,
+        image: null
     });
     
     const [markerPosition, setMarkerPosition] = useState({ 

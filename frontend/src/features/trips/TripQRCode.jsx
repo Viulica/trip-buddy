@@ -2,9 +2,7 @@ import React from 'react'
 import { QRCodeSVG } from 'qrcode.react';
 
 const TripQRCode = ({tripId}) => {
-    const baseUrl = import.meta.env.DEV 
-        ? `http://[172.20.10.3]:5173`
-        : window.location.origin;
+    const baseUrl = 'https://trip-buddy-taupe.vercel.app';
     const tripLink = `${baseUrl}/trips/${tripId}`;
     
     console.log('QR Code URL:', tripLink);
