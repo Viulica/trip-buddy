@@ -78,15 +78,6 @@ const TripPage = () => {
                                 <p>{trip.activity}</p>
                             </div>
                         </div>
-                        
-                        <div className="meta-item qr-meta">
-                            <div>
-                                <h3>Share Trip</h3>
-                                <div className="trip-qr-container">
-                                    <TripQRCode tripId={tripId} />
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                     {trip.tripLog && trip.tripLog.trim() !== '' && (
